@@ -12,12 +12,17 @@ for d in data:
 	sum_len += len(d)
 print('留言平均長', sum_len / len(data))
 
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print(len(new))
+print(new[0])
 
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print(len(good))
+print(good[0])
 
-
-
-
-
-
-# print(data[0])
-# print(data[1])
